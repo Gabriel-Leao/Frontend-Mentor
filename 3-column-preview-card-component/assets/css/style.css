@@ -1,0 +1,174 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    color: var(--Transparent-white);
+    display: flex;
+    min-height: 100vh;
+}
+
+img {
+    width: 64px;
+    height: 40px;
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+}
+
+
+.title {
+    margin-top: 5vh;
+}
+
+.text {
+    margin-top: 5vh;
+}
+
+.button {
+    padding: 8px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--Very-light-gray);
+    border: 3px solid var(--Very-light-gray);
+    border-radius: 50px;
+    margin-top: 5vh;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color:hsl(0, 0%, 95%, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.grid-layout {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    max-width: 48rem;
+    max-height: 60vh;
+}
+
+.sedans-container {
+    background-color: var(--Bright-orange);
+    max-width: 16rem;
+    max-height: 60vh;
+    margin: 0 auto;
+    padding: 50px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#sedan-button a {
+    color: var(--Bright-orange);
+    text-decoration: none;
+}
+
+#sedan-button:hover a {
+    color: var(--Very-light-gray);
+    transition: 0.3s ease-in-out;
+}
+
+.suvs-container {
+    background-color: var(--Dark-cyan);
+    max-width: 16rem;
+    max-height: 60vh;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#suvs-button a {
+    color: var(--Dark-cyan);
+    text-decoration: none;
+}
+
+#suvs-button:hover a {
+    color: var(--Very-light-gray);
+    transition: 0.3s ease-in-out;
+}
+
+.luxury-container {
+    background-color: var(--Very-dark-cyan);
+    max-width: 16rem;
+    max-height: 60vh;
+    margin: 0 auto;
+    padding: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#luxury-button a {
+    color: var(--Very-dark-cyan);
+    text-decoration: none;
+}
+
+#luxury-button:hover a {
+    color: var(--Very-light-gray);
+    transition: 0.3s ease-in-out;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+    .grid-layout {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        margin-top: 20vh;
+        max-width: 48rem;
+        max-height: 60vh;
+    }
+
+    .sedans-container {
+        grid-column: 1;
+        width: 16rem;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+
+    .suvs-container {
+        grid-column: 2;
+    }
+
+    .luxury-container {
+        grid-column: 3;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+
+    .attribution {
+        grid-column: 2;
+    }
+}

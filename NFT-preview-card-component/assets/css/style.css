@@ -1,0 +1,169 @@
+:root {
+    --body-color: #0D1A2D;
+    --conatiner-color: #0C192C;
+    --card-color: #15273F;
+    --text-color: #CFCFCF;
+    --contrast-color: #FFFEFF;
+    --emphasis-color: #02DAC5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+p {
+    font-size: 18px;
+}
+
+.nft-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    width: 24rem;
+    height: 85vh;
+    background-color: var(--conatiner-color);
+    border-radius: 30px;
+}
+
+.card-content {
+    max-width: 22rem;
+    max-height: 100vh;
+    background-color: var(--card-color);
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#product-img {
+    margin: 0 auto;
+    margin-top: 4vh;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+}
+
+#product-img:hover {
+    cursor: pointer;
+}
+
+.card-header #view-icon {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 4vh;
+    border-radius: 8px;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 300px;
+    height: 300px;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-header #view-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-header #view-icon img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#title-header {
+    color: var(--contrast-color);
+    padding-left: 30px;
+    margin-bottom: 2vh;
+}
+
+#title-header:hover  {
+    color: var(--emphasis-color);
+    cursor: pointer;
+}
+
+#text-header {
+    margin-top: 0;
+    padding-left: 30px;
+    margin-bottom: 2vh;
+}
+
+.card-icons {
+    margin-bottom: 1vh;
+    display: flex;
+}
+
+#ethereum-icon {
+    padding-left: 30px;
+}
+
+#ethereum-txt {
+    color: var(--emphasis-color);
+    font-weight: 600;
+}
+
+#clock-icon {
+    padding-left: 100px;
+}
+
+#clock-txt {
+    color: var(--contrast-color);
+}
+
+.credit-card {
+    display: flex;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+    padding-left: 30px;
+}
+
+#credit-img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#credit-txt {
+    padding-left: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+#credit-name {
+    text-align: center;
+    align-self: center;
+    color: var(--contrast-color);
+}
+
+#credit-name:hover  {
+    color: var(--emphasis-color);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--contrast-color); 
+}
